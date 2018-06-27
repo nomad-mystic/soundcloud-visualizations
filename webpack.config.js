@@ -1,17 +1,16 @@
+
 const webpack = require('webpack');
 const path = require('path');
-// import 'fs';
-
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-// const extractPlugin = new ExtractTextPlugin({
-//     filename: 'main.css'
-// });
+// Config
+const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
+    mode: isDev ? 'development' : 'production',
     entry: './src/index.js',
     output: {
-        path: path.resolve('public'),
+        path: path.resolve('public/'),
         filename: 'bundle.js',
         publicPath: './public/'
     },
@@ -60,6 +59,23 @@ module.exports = {
             },
         ],
     },
+    // devServer: {
+    //     contentBase: path.join(__dirname, '/public'),
+    //     watchContentBase: true,
+    //     // proxy: [
+    //     //     {
+    //     //         context: ['./api'],
+    //     //         target: 'http://localhost:8000',
+    //     //         secure: false,
+    //     //     },
+    //     // ],
+    //     port: 8000, // port webpack-dev-server listens to, defaults to 8080
+    //     overlay: { // Shows a full-screen overlay in the browser when there are compiler errors or warnings
+    //         warnings: false, // defaults to false
+    //         errors: false, // defaults to false
+    //     },
+    // },
+    devtool: 'source-map',
     plugins: [
         // new webpack.ProvidePlugin({
         //     $: 'jquery',

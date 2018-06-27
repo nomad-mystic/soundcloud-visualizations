@@ -94,7 +94,19 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! ./sass/index.scss */ \"./src/sass/index.scss\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvaW5kZXguanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vc3JjL2luZGV4LmpzPzEyZDUiXSwic291cmNlc0NvbnRlbnQiOlsiXHJcbmltcG9ydCAnLi9zYXNzL2luZGV4LnNjc3MnO1xyXG5cclxuXHJcbiJdLCJtYXBwaW5ncyI6Ijs7QUFDQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/index.js\n");
+eval("\n\n__webpack_require__(/*! ./sass/index.scss */ \"./src/sass/index.scss\");\n\n__webpack_require__(/*! ./js/index.js */ \"./src/js/index.js\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvaW5kZXguanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vc3JjL2luZGV4LmpzPzEyZDUiXSwic291cmNlc0NvbnRlbnQiOlsiXHJcbi8vIHN0eWxlc1xyXG5pbXBvcnQgJy4vc2Fzcy9pbmRleC5zY3NzJztcclxuXHJcbi8vIGpzXHJcbmltcG9ydCAnLi9qcy9pbmRleC5qcyc7XHJcblxyXG4iXSwibWFwcGluZ3MiOiI7O0FBRUE7QUFDQTtBQUVBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/index.js\n");
+
+/***/ }),
+
+/***/ "./src/js/index.js":
+/*!*************************!*\
+  !*** ./src/js/index.js ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nconsole.log('testing this will works');\nconsole.log('testing this will works');\n\nfunction testing() {\n    return 'string';\n}\n\ntesting();//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvanMvaW5kZXguanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vc3JjL2pzL2luZGV4LmpzPzAyN2QiXSwic291cmNlc0NvbnRlbnQiOlsiXHJcblxyXG5cclxuXHJcbmNvbnNvbGUubG9nKCd0ZXN0aW5nIHRoaXMgd2lsbCB3b3JrcycpO1xyXG5jb25zb2xlLmxvZygndGVzdGluZyB0aGlzIHdpbGwgd29ya3MnKTtcclxuXHJcbmZ1bmN0aW9uIHRlc3RpbmcgKCkge1xyXG4gICAgcmV0dXJuICdzdHJpbmcnO1xyXG59XHJcblxyXG50ZXN0aW5nKCk7Il0sIm1hcHBpbmdzIjoiOztBQUlBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/js/index.js\n");
 
 /***/ }),
 
