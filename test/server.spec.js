@@ -14,7 +14,7 @@ chai.use(chaiHttp);
 describe('Server basic functionality', function() {
 
     after(function(done) {
-        server.close(done);
+        // server.close(done);
     });
 
     it('This will return 200 status code', function(done) {
