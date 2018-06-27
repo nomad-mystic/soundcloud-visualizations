@@ -11,20 +11,16 @@ const expect = chai.expect;
 chai.use(chaiHttp);
 
 
-describe('Server basic functionality', () => {
+describe('Server basic functionality', function() {
 
-    after((done) => {
+    after(function(done) {
         server.close(done);
     });
 
-    before(() => {
-        server = server.listen(8000);
-    });
-
-    it('This will return 200 status code', (done) => {
+    it('This will return 200 status code', function(done) {
         chai.request(server)
             .get('/')
-            .end((error, res) => {
+            .end(function(error, res) {
                 expect(res).to.have.status(200);
                 done();
             });
@@ -49,7 +45,3 @@ describe('Server basic functionality', () => {
             });
     });
 });
-
-
-
-
