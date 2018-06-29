@@ -17,7 +17,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
-    "snapsvg": "^0.5.1"
+    "snapsvg": "^0.5.1",
+    "soundcloud": "^3.3.0"
   },
   "devDependencies": {
     "autoprefixer": "^8.6.3",

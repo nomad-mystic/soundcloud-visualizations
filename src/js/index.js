@@ -1,9 +1,16 @@
+// depends
+const SC = require('soundcloud');
 
 // Utils
 import getPromise from './utils/getPromise';
 
 // keys
 import keys from '../../config/keys';
+
+
+
+
+
 
 getPromise('http://localhost:8000/api/genre/hip-hop')
 .then((res) => {
