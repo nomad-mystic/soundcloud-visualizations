@@ -16,7 +16,8 @@
   "author": "Keith Murphy",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "snapsvg": "^0.5.1"
   },
   "devDependencies": {
     "autoprefixer": "^8.6.3",
