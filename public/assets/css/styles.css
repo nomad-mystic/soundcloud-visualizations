@@ -51,10 +51,12 @@ table {
 body {
   font-size: 16px; }
 
-#container {
+.isFlex {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+#outerWrapperElement {
   width: 50%;
   margin: 0 auto; }
 
@@ -62,4 +64,5 @@ body {
   width: 100px;
   height: 100px;
   margin: 1em;
-  background: red; }
+  background: red;
+  cursor: pointer; }

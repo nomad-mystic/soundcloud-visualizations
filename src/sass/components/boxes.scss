@@ -1,16 +1,22 @@
 
 
-#container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+#outerWrapperElement {
+
   width: 50%;
   margin: 0 auto;
 }
+
+//#genreContainer {
+//  display: flex;
+//  justify-content: center;
+//  flex-wrap: wrap;
+//}
+
 
 .box {
   width: 100px;
   height: 100px;
   margin: 1em;
   background: red;
+  cursor: pointer;
 }

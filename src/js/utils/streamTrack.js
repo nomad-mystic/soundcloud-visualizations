@@ -1,15 +1,25 @@
 // depends
 const SC = require('soundcloud');
 
+// keys
+import keys from '../../../config/keys';
+
+
+
+SC.initialize({
+	client_id: keys.soundcloudKey,
+});
+
 
 /**
  * @author nomadmystics@gmail.com
  * @param {string} trackNumber
  * @return void
  */
-const streamTrack = ((trackNumber) => {
 
-	SC.stream(`/tracks${trackNumber}`).then(function(player) {
+export const streamTrack = (trackNumber) => {
+
+	SC.stream(`${trackNumber}`).then(function(player) {
 		console.log(player);
 		player.play().then(() =>  {
 
@@ -21,8 +31,4 @@ const streamTrack = ((trackNumber) => {
 		});
 	});
 
-})(trackNumber);
-
-
-
-export default streamTrack;
+};

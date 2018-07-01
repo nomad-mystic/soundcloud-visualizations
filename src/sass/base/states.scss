@@ -1,0 +1,13 @@
+.isHidden {
+  display: none;
+}
+
+.isFaded {
+  opacity: 0;
+  transition: opcity 1s ease-in;
+}
+
+.isUnFaded {
+  opacity: 1;
+  transition: opcity 1s ease-in;
+}
