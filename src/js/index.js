@@ -8,11 +8,21 @@ import getPromise from './utils/getPromise';
 import keys from '../../config/keys';
 
 
-import genres from './components/genre.component';
+import genres from './config/genreList';
+import { genreSVGEvents } from './events/svg.events';
+
+import init from './common/init';
+
+init().screenLoad();
 
 
+// testing to see if this will work out of the box
+// genreSVGEvents();
 
-genres();
+
+// genres();
+
+
 
 
 // getPromise('http://localhost:8000/api/genre/hip-hop')
