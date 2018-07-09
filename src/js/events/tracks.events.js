@@ -10,14 +10,17 @@ const queryString = require('querystring');
  * @return void
  */
 
-export const tracksEvent = (tracksContainer) => {
-	tracksContainer.addEventListener('click', (event) => {
-		if (event.target && event.target.tagName === 'DIV') {
-			console.log(event);
-			const parsedURL = document.createElement('a');
-			parsedURL.href = event.target.dataset.uri;
+export const tracksEvents = (svgTrianglesElements) => {
+	const svgTrianglesElementsLength = svgTrianglesElements.length;
 
-			console.log(queryString.parse(event.target.dataset.uri));
+	const svgTrianglesElementEvent = (event) => {
+		// console.log(event);
+		if (event.target && event.target.tagName === 'text' || event.target.tagName === 'rect') {
+			// console.log(event);
+			const parsedURL = document.createElement('a');
+			parsedURL.href = event.target.dataset.trackUri;
+
+			console.log(queryString.parse(event.target.dataset.trackUri));
 
 			console.log(parsedURL.pathname);
 			let trackURL = parsedURL.pathname;
@@ -25,5 +28,9 @@ export const tracksEvent = (tracksContainer) => {
 			console.log(`${trackURL}`);
 			streamTrack(trackURL);
 		}
-	}, false);
+	};
+
+	for (let i = 0; i < svgTrianglesElementsLength; i++) {
+		svgTrianglesElements[i].addEventListener('click', svgTrianglesElementEvent, false);
+	}
 };

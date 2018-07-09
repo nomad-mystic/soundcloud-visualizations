@@ -1,6 +1,8 @@
 import { genreSVGEvents } from "../events/svg.events";
-import { changeText } from '../svg/changeText';
-import genres  from '../config/genreList';
+import { modifyForGenreSVG } from '../svg/modifyForGenreSVG';
+import { modifyForTrackSVG } from "../svg/modifyForTrackSVG";
+import {tracksEvents} from "../events/tracks.events";
+
 
 
 const init = () => {
@@ -13,16 +15,24 @@ const init = () => {
 	 */
 
 	const screenLoad = () => {
-		changeText(genres, svgTrianglesElements);
+		modifyForGenreSVG(svgTrianglesElements);
 		genreSVGEvents(svgTrianglesElements);
+	};
 
+	/**
+	 * @description once a user has selected the genre they want to load
+	 * @param {string} genre
+	 */
+	const trackLoad = (genre) => {
+		console.log(genre);
+		modifyForTrackSVG(svgTrianglesElements, genre);
+		tracksEvents(svgTrianglesElements);
 	};
 
 	return {
-		screenLoad: screenLoad
+		screenLoad: screenLoad,
+		trackLoad: trackLoad,
 	}
 };
-
-
 
 export default init;

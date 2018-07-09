@@ -1,3 +1,3 @@
 export default {
-    serverPort: 8000,
+    serverPort: 3000,
 }
