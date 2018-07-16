@@ -1,0 +1,27 @@
+
+#info {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+
+  img {
+    @include responsiveImg();
+  }
+
+  .detail {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+  }
+
+  .wave {
+    cursor: pointer;
+    width: 50%;
+  }
+}
+
+

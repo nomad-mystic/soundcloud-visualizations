@@ -2,6 +2,11 @@
   display: none;
 }
 
+.isNotVisible {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .isFaded {
   opacity: 0;
   transition: opcity 1s ease-in;

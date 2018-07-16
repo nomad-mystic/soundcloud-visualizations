@@ -8,9 +8,13 @@ body {
   background: #000000;
 }
 
+svg {
+  cursor: pointer;
+}
 
 .isFlex {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
+

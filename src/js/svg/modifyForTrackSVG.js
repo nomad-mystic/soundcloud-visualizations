@@ -30,7 +30,11 @@ export const modifyForTrackSVG = (svgTrianglesElements, genre) => {
 		// make sure there are 9 tracks
 		if (tracks) {
 			// const genreValues = genres.predefinedGenres;
-			tracks.forEach((track, index) => {
+			tracks.some((track, index) => {
+
+				// if (index = 9) {
+				// 	return true;
+				// }
 
 				// console.log(track);
 				// if (genreValues.hasOwnProperty(genre)) {
@@ -58,7 +62,7 @@ export const modifyForTrackSVG = (svgTrianglesElements, genre) => {
 					// data-track-artwork-url="${track.artwork_url}"
 					// data-track-user="${track.user.username}"
 					// data-track-waveform="${track.waveform_url}"
-					count++;
+					// count++;
 
 					// if (count >= 9) {
 					// 	break;

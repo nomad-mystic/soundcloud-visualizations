@@ -52,10 +52,28 @@ body {
   font-size: 16px;
   background: #000000; }
 
+svg {
+  cursor: pointer; }
+
 .isFlex {
   display: flex;
   justify-content: center;
   flex-wrap: wrap; }
+
+.isHidden {
+  display: none; }
+
+.isNotVisible {
+  opacity: 0;
+  visibility: hidden; }
+
+.isFaded {
+  opacity: 0;
+  transition: opcity 1s ease-in; }
+
+.isUnFaded {
+  opacity: 1;
+  transition: opcity 1s ease-in; }
 
 #outerWrapperElement {
   width: 50%;
@@ -79,3 +97,23 @@ body {
 @media screen and (min-width: 1024px) {
   .svgContainer {
     width: 40%; } }
+
+#info {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%; }
+  #info img {
+    display: block;
+    max-width: 100%;
+    height: auto; }
+  #info .detail {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff; }
+  #info .wave {
+    cursor: pointer;
+    width: 50%; }
