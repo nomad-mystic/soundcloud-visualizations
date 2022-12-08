@@ -16,7 +16,7 @@
   "author": "Keith Murphy",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "snapsvg": "^0.5.1",
     "soundcloud": "^3.3.0"
   },
